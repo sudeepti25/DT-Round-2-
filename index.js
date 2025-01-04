@@ -1,12 +1,12 @@
 function toggleSidebar() {
     const sidebar = document.getElementById("mySidebar");
-    const button = document.querySelector(".button img"); // Get the image inside the button
+    const button = document.querySelector(".button img"); 
     const buttondiv = document.querySelector(".button");
     const buttonText = document.getElementById("button-text");
 
-    // Check if the sidebar is already open
+    
     if (sidebar.style.width === "250px") {
-        // Close the sidebar and change the button image
+        
         sidebar.style.width = "0";
         buttondiv.style.width="132px"
         button.src = "./public/arrow-icon-white-background-symbol-600w-1315536875.webp";
@@ -14,9 +14,9 @@ function toggleSidebar() {
         sidebar.innerHTML=`       <div class="one">1</div>
 `
 
-         // Revert to the original image
+         
     } else {
-        // Open the sidebar and change the button image
+        
         sidebar.style.width = "250px";
         button.src = "./public/images.png";
          buttondiv.style.width="250px";
